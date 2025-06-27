@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter Terminal Demo</title>
+    <script src="https://terminal.jup.ag/main-v4.js" data-preload defer></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jupiter Terminal Demo</h1>
+        <div id="jupiter-terminal"></div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            window.Jupiter.init({
+                displayMode: "widget",
+                integratedTargetId: "jupiter-terminal",
+            });
+        };
+    </script>
+</body>
+</html>
